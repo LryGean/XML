@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+	<book id="001" category="文艺" amount="100" remain="80" discount="8.7">
+		<bookinfo>
+			<title>三国演义</title>
+			<author>罗贯中</author>
+			<publish>
+				<publisher>文艺出版社</publisher>
+				<ISBN>0-764-58007-8</ISBN>
+				<pubdate>1998.10</pubdate>
+			</publish>
+			<price>80</price>
+		</bookinfo>
+	</book>
+	<book id="018" category="计算机" amount="560" remain="200" discount="8.2">
+		<bookinfo>
+			<title>计算机导论</title>
+			<author>丁跃潮等</author>
+			<publish>
+				<publisher>高等教育出版社</publisher>
+				<ISBN>7-04-014768-8</ISBN>
+				<pubdate>2004.6</pubdate>
+			</publish>
+			<price>19.7</price>
+		</bookinfo>
+	</book>
+</books>

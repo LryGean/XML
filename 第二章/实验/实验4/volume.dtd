@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!ELEMENT volume (authors|books|publishers)*>
+<!ENTITY % author SYSTEM "authors.dtd">
+%author;
+<!ENTITY % book SYSTEM "books.dtd">
+%book;
+<!ENTITY % publisher SYSTEM "publishers.dtd">
+%publisher;

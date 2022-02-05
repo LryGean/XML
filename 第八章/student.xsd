@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="name" type="xsd:string"/>
+	<xsd:element name="birthday" type="xsd:date"/>
+	<xsd:element name="sex">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="男"/>
+				<xsd:enumeration value="女"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:simpleType name="scoreType">
+		<xsd:restriction base="xsd:integer">
+			<xsd:minInclusive value="0"/>
+			<xsd:maxInclusive value="100"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:element name="score" type="scoreType"/>
+	<xsd:complexType name="stuType">
+		<xsd:sequence>
+			<xsd:element ref="name"/>
+			<xsd:element ref="sex"/>
+			<xsd:element ref="birthday"/>
+			<xsd:element ref="score"/>
+			<xsd:element name="skill" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="student">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="stuType">
+					<xsd:attribute name="ID" type="xsd:string" use="required"/>
+				</xsd:extension>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="roster">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="student" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

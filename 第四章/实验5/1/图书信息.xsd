@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:annotation>
+        <xs:documentation>
+			XML 文件使用Schema 测试
+        </xs:documentation> 
+   </xs:annotation>
+
+	<xs:complexType name="authorType">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string"/>
+			<xs:element name="E-mail" type="xs:string"/>
+		</xs:sequence>   
+   </xs:complexType>
+    <xs:complexType name="pub-houseType">
+		<xs:sequence>
+			<xs:element name="p-name" type="xs:string"/>
+			<xs:element name="address" type="xs:string"/>
+			<xs:element name="zipcode" type="xs:string"/>
+			<xs:element name="E-mail" type="xs:string"/>
+		</xs:sequence>   
+   </xs:complexType>
+
+	<xs:attribute name="type">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+                <xs:enumeration value="科技"/>
+                <xs:enumeration value="教育"/>			
+			</xs:restriction>
+		</xs:simpleType>  
+ 	</xs:attribute>
+
+	<xs:complexType name="bookType">
+	    <xs:sequence>
+			<xs:element name="b-name" type="xs:string"/>
+			<xs:element name="author" type="authorType"/>
+			<xs:element name="price" type="xs:string"/>
+			<xs:element name="publishing-house" type="pub-houseType"/>  
+		</xs:sequence>
+		<xs:attribute ref="type"/>
+	</xs:complexType>
+   
+   <xs:element name="bookcase">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="book" type="bookType" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>
+
+    

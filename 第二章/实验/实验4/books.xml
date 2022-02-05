@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+	<book ISBN="ISBN7-04-014768-8">
+		<b_name>计算机导论</b_name>
+		<price>19.7</price>
+	</book>
+	<book ISBN="ISBN7-113-05892-2">
+		<b_name>PowerBuilder 入门教程</b_name>
+		<price>48.0</price>
+	</book>
+</books>

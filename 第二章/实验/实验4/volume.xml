@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE volume SYSTEM "volume.dtd"[
+<!ENTITY authors SYSTEM "authors.xml">
+<!ENTITY books SYSTEM "books.xml">
+<!ENTITY publishers SYSTEM "publishers.xml">]>
+<volume>
+	&authors;
+	&books;
+	&publishers;
+</volume>
+

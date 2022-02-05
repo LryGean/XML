@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT publishers (publisher+)>
+<!ELEMENT publisher (p_name,address)>
+<!ATTLIST publisher ISBN IDREF #REQUIRED>
+<!ELEMENT p_name (#PCDATA)>
+<!ELEMENT address (#PCDATA)>

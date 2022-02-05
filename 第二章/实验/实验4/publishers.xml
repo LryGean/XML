@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<publishers>
+	<publisher ISBN="ISBN7-04-014768-8">
+		<p_name>高等教育出版社</p_name>
+		<address>北京市东城区沙滩后街55 号</address>
+	</publisher>
+	<publisher ISBN="ISBN7-113-05892-2">
+		<p_name>中国铁道出版社</p_name>
+		<address>北京市宣武区右安门西街8 号</address>
+	</publisher>
+</publishers>

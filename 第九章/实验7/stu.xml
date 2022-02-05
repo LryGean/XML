@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<musiclession>
+	<student ID="s101" sex="女">
+		<name>李华</name>
+		<age>12</age>
+		<score>92</score>
+	</student>
+	<student ID="s102" sex="男">
+		<name>笑林</name>
+		<age>22</age>
+		<score>82</score>
+	</student>
+	<student ID="s103" sex="男">
+		<name>王明</name>
+		<age>18</age>
+		<score>90</score>
+	</student>
+</musiclession>

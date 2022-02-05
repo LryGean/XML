@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT authors (author+)>
+<!ELEMENT author (a_name,sex,email*)>
+<!ATTLIST author id ID #REQUIRED>
+<!ATTLIST author ISBN CDATA #REQUIRED>
+<!ELEMENT a_name (#PCDATA)>
+<!ELEMENT sex (#PCDATA)>
+<!ELEMENT email (#PCDATA)>

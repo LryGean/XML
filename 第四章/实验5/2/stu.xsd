@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:attribute name="sid">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<!--<xsd:length value="8"/>-->
+				<!--{3,5}:3到5次-->
+				<xsd:pattern value="[0-9]{8}"></xsd:pattern>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:attribute>
+	<xsd:element name="name">
+		<xsd:complexType>
+			<xsd:simpleContent>
+				<xsd:extension base="xsd:string">
+					<xsd:attribute ref="sid" use="required"/>
+				</xsd:extension>
+			</xsd:simpleContent>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="age" type="ageType"/>
+	<xsd:simpleType name="ageType">
+		<xsd:restriction base="xsd:integer">
+			<xsd:minExclusive value="14"/>
+			<xsd:maxExclusive value="40"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:element name="sex">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string">
+				<xsd:enumeration value="男"/>
+				<xsd:enumeration value="女"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:element name="address" type="xsd:string"/>
+	<xsd:element name="tel">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:integer">
+				<xsd:pattern value="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"/>
+			</xsd:restriction>
+		</xsd:simpleType>
+	</xsd:element>
+	<xsd:simpleType name="scoreType">
+		<xsd:restriction base="xsd:integer">
+			<xsd:minInclusive value="0"></xsd:minInclusive>
+			<xsd:maxInclusive value="100"></xsd:maxInclusive>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:element name="score">
+		<xsd:complexType>
+			<xsd:simpleContent>
+				<xsd:extension base="scoreType">
+					<xsd:attribute name="type" use="required">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:enumeration value="优"></xsd:enumeration>
+								<xsd:enumeration value="良"></xsd:enumeration>
+								<xsd:enumeration value="中"></xsd:enumeration>
+								<xsd:enumeration value="差"></xsd:enumeration>
+							</xsd:restriction>	
+						</xsd:simpleType>
+					</xsd:attribute>
+				</xsd:extension>
+			</xsd:simpleContent>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="remark" type="xsd:string"/>
+	<xsd:complexType name="stuType">
+		<xsd:sequence>
+			<xsd:element ref="name"/>
+			<xsd:element ref="age"/>
+			<xsd:element ref="sex"/>
+			<xsd:element ref="address"/>
+			<xsd:element ref="tel"/>
+			<xsd:element ref="score"/>
+			<xsd:element name="skill" type="xsd:string" maxOccurs="unbounded"/>
+			<xsd:element ref="remark"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:attribute name="class">
+		<xsd:simpleType>
+			<xsd:restriction base="xsd:string" id="ID"/>
+		</xsd:simpleType>
+	</xsd:attribute>
+	<xsd:element name="student">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="stuType">
+					<xsd:attribute ref="class" use="required"/>
+				</xsd:extension>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="students">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="student" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<authors>
+	<author id="a0001" ISBN="ISBN7-04-014768-8">
+		<a_name>丁跃潮</a_name>
+		<sex>男</sex>
+		<email> ding@jmu.edu.cn</email>
+	</author>
+	<author id="a0002" ISBN="ISBN7-113-05892-2">
+		<a_name>龚涛</a_name>
+		<sex>男</sex>
+	</author>
+</authors>

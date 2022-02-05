@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="zh.xsl"?>
+<roster xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="student.xsd">
+	<student ID="s101">
+		<!--ID表示学号，取值唯一-->
+		<name>李华</name>
+		<sex>男</sex>
+		<!--性别取值限制在男与女-->
+		<birthday>1978-09-12</birthday>
+		<score>92</score>
+		<!--成绩取值限制0到100的整数-->
+		<skill>Java</skill>
+		<!--技能可以有多项，也可以没有-->
+		<skill>Oracle</skill>
+		<skill>C Sharp</skill>
+		<skill>SQL Server</skill>
+	</student>
+	<student ID="s102">
+		<name>倪冰</name>
+		<sex>女</sex>
+		<birthday>1979-01-12</birthday>
+		<score>89</score>
+		<skill>Visual Basic</skill>
+		<skill>SQL Server</skill>
+		<skill>ASP</skill>
+	</student>
+	<student ID="s103">
+		<name>张君宝</name>
+		<sex>男</sex>
+		<birthday>1982-09-09</birthday>
+		<score>100</score>
+		<skill>C Sharp</skill>
+		<skill>SQL Server</skill>
+		<skill>UML</skill>
+	</student>
+	<student ID="s104">
+		<name>杨惠</name>
+		<sex>女</sex>
+		<birthday>1980-05-16</birthday>
+		<score>85</score>
+		<skill>Visual C++</skill>
+		<skill>SQL Server</skill>
+	</student>
+	<student ID="s105">
+		<name>崔春晓</name>
+		<sex>男</sex>
+		<birthday>1981-04-19</birthday>
+		<score>86</score>
+		<skill>UML</skill>
+		<skill>SQL Server</skill>
+	</student>
+	<student ID="s106">
+		<name>王动</name>
+		<sex>男</sex>
+		<birthday>1981-04-19</birthday>
+		<score>59</score>
+	</student>
+	<student ID="s107">
+		<name>李寻欢</name>
+		<sex>男</sex>
+		<birthday>1981-04-19</birthday>
+		<score>58</score>
+		<skill>UML</skill>
+		<skill>C Sharp</skill>
+		<skill>XML</skill>
+		<skill>SQL Server</skill>
+	</student>
+</roster>

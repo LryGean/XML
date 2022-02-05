@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="stu.xsd">
+	<student class="cs071">
+		<name sid="07511101">蓝色天际</name>
+		<age>18</age>
+		<sex>男</sex>
+		<address>贝壳田园</address>
+		<tel>88888888</tel>
+		<score type="优">100</score>
+		<skill>J2EE</skill>
+		<remark>心有多大舞台就有多大</remark>
+	</student>
+	<student class="mis071">
+		<name sid="07215410">你是明天</name>
+		<age>20</age>
+		<sex>女</sex>
+		<address>贝壳田园</address>
+		<tel>11111111</tel>
+		<score type="差">40</score>
+		<skill>.NET</skill>
+		<remark>心有多大舞台就有多大</remark>
+	</student>
+</students>

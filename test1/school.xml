@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE school SYSTEM "school.dtd">
+<school>
+	<class>
+		<student sno="S123">
+			<name>张三</name>
+			<sex="F"></sex>
+			<age>20</age>
+		</student>
+		<student sno="s124" sex="F">
+			<name>李四</name>
+			<sex>
+			<age>20</age>
+		</student>
+	</class>
+</school>

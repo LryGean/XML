@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE class>[
+<!ELEMENT class (name,sno,sex)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT sno (#PCDATA)>
+	<!ELEMENT sex (#PCDATA)>
+]>
+<class>
+	<name>张三</name>
+	<sno>195150</sno>
+	<sex>男</sex>
+	<name>李四</name>
+	<sno>195151</sno>
+	<sex>女</sex>
+</class>

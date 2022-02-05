@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT 运动员名单 (参加人员+)>
+<!ELEMENT 参加人员 (名字,年龄?,性别,联系方式+)>
+<!ELEMENT 名字 (#PCDATA)>
+<!ELEMENT 年龄 (#PCDATA)>
+<!ELEMENT 性别 (#PCDATA)>
+<!ELEMENT 联系方式 (#PCDATA)>
+<!ATTLIST 参加人员 ID ID #REQUIRED>
+<!ATTLIST 联系方式 类型 (手机|固定电话) "手机">
+<!--ATTLIST 联系方式 类型 CDATA #REQUIRED-->

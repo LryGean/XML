@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--school-->
+<!--
+|:互斥
+?:可有可无
+-->
+<!ELEMENT school (class+)>
+<!ELEMENT class (student+)>
+<!ELEMENT student (name+,sex,sno,age?)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT sex EMPTY>
+<!ELEMENT sno (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!--#REQUIRED-->
+<!ATTLIST student sno ID #REQUIRED>
+<!ATTLIST student sex (M|F) "F">

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT books (book+)>
+<!ELEMENT book (b_name,price)>
+<!ATTLIST book ISBN ID #REQUIRED>
+<!ELEMENT b_name (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
